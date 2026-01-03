@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <h1>Welcome to odd even calculator</h1>
+    Enter a number:
+    <input type="number" name="i1" id="a1">
+
+    <button onclick="even()">Check</button>
+
+    <p id="p1"></p>
+
+    <script>
+        function even() {
+            
+            var n = Number(document.getElementById("a1").value);
+
+            if (n % 2 == 0) {
+                document.getElementById("p1").innerHTML = "Number is Even";
+            } else {
+                document.getElementById("p1").innerHTML = "Number is Odd";
+            }
+        } 
+    </script>
+</body>
+
+</html>
